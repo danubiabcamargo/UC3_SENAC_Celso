@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>  
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#painel").slideDown("fast"); //ou slow               
+            });
+        });
+    </script>
+    <style>
+        #painel, #flip{
+            padding: 5px;
+            text-align: center;
+            background-color: gray;
+            border: solid 1px black;
+        }
+        #painel{
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="flip">Clique aqui sala 18</div>
+    <div id="painel">Isso é um exemplo do que o Jquery pode fazer por você<br/>
+        Você poderá ter vários paineis como esse </div>
+    
+
+    
+</body>
+</html>
